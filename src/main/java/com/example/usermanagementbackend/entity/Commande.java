@@ -41,7 +41,6 @@ public class Commande {
     @Column(name = "adresse")
     private String adresse;
 
-    @Enumerated(EnumType.STRING)
     private OrderStatus status; // Changed to OrderStatus enum
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
