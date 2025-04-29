@@ -49,7 +49,7 @@ public class SecurityConfig {
 
                 .requestMatchers("/api/commandes/**").permitAll()
                 .requestMatchers("/api/factures/**").permitAll()
-                .requestMatchers("/api/transactions/*").permitAll()
+                .requestMatchers("/api/transactions/**").permitAll()
                 .requestMatchers("/api/transactions/commande/*").permitAll()
                 .requestMatchers("/api/lignes-commande/*").permitAll()
                 .requestMatchers("/api/lignes-facture/*").permitAll()
